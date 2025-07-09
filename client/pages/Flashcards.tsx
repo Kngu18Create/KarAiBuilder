@@ -3,8 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, CreditCard, RotateCcw, ArrowLeft, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import AuthModal from "@/components/AuthModal";
 
 const Flashcards = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+  const handleAuthRequired = () => {
+    setShowAuthModal(true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-emerald-50">
       {/* Header */}
@@ -63,7 +71,10 @@ const Flashcards = () => {
                     Revisión necesaria
                   </Badge>
                 </div>
-                <Button className="w-full rounded-xl">
+                <Button
+                  className="w-full rounded-xl"
+                  onClick={handleAuthRequired}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Estudiar Ahora
                 </Button>
@@ -123,7 +134,10 @@ const Flashcards = () => {
                     En progreso
                   </Badge>
                 </div>
-                <Button className="w-full rounded-xl">
+                <Button
+                  className="w-full rounded-xl"
+                  onClick={handleAuthRequired}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Continuar
                 </Button>
@@ -153,7 +167,10 @@ const Flashcards = () => {
                     Nuevo
                   </Badge>
                 </div>
-                <Button className="w-full rounded-xl">
+                <Button
+                  className="w-full rounded-xl"
+                  onClick={handleAuthRequired}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Comenzar
                 </Button>
@@ -204,6 +221,9 @@ const Flashcards = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal de autenticación */}
+      <AuthModal open={showAuthModal} onOpenChange={setShowAuthModal} />
     </div>
   );
 };
