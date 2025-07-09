@@ -58,16 +58,16 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <Brain className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 KarAI
               </span>
             </Link>
@@ -99,7 +99,7 @@ const Dashboard = () => {
 
         {/* Progress Overview */}
         <div className="grid md:grid-cols-4 gap-6 mb-8">
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100/50">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white border border-gray-200">
             <CardContent className="p-0">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
@@ -125,7 +125,7 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white border border-gray-200">
             <CardContent className="p-0">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
@@ -142,7 +142,7 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-purple-50 to-purple-100/50">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white border border-gray-200">
             <CardContent className="p-0">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
@@ -160,7 +160,7 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-indigo-50 to-indigo-100/50">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white border border-gray-200">
             <CardContent className="p-0">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
