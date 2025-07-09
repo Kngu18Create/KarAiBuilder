@@ -18,15 +18,15 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
               <Brain className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               KarAI
             </span>
           </div>
@@ -52,13 +52,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <Badge className="mb-8 rounded-full px-6 py-2 bg-primary/10 text-primary border-primary/20">
+        <Badge className="mb-8 rounded-full px-6 py-2 bg-gray-100 text-gray-900 border-gray-200">
           ✨ Inteligencia Artificial para Educación
         </Badge>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Aprende más inteligente
           <br />
-          <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary via-gray-700 to-secondary bg-clip-text text-transparent">
             con KarAI
           </span>
         </h1>
@@ -89,16 +89,16 @@ const Index = () => {
 
         {/* Stats */}
         <div className="flex flex-wrap justify-center gap-8 mt-16 text-center">
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200">
             <div className="text-3xl font-bold text-primary mb-2">10K+</div>
             <div className="text-gray-600">Estudiantes activos</div>
           </div>
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200">
             <div className="text-3xl font-bold text-secondary mb-2">50K+</div>
             <div className="text-gray-600">Flashcards creadas</div>
           </div>
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
-            <div className="text-3xl font-bold text-accent mb-2">95%</div>
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200">
+            <div className="text-3xl font-bold text-primary mb-2">95%</div>
             <div className="text-gray-600">Mejora en retención</div>
           </div>
         </div>
@@ -121,7 +121,7 @@ const Index = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100/50 hover:shadow-xl transition-all duration-300 group">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white hover:shadow-xl transition-all duration-300 group">
             <CardContent className="p-0">
               <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Upload className="w-6 h-6 text-white" />
@@ -134,7 +134,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50 hover:shadow-xl transition-all duration-300 group">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white hover:shadow-xl transition-all duration-300 group">
             <CardContent className="p-0">
               <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <FileText className="w-6 h-6 text-white" />
@@ -147,9 +147,9 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-purple-50 to-purple-100/50 hover:shadow-xl transition-all duration-300 group">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white hover:shadow-xl transition-all duration-300 group">
             <CardContent className="p-0">
-              <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <CreditCard className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Flashcards</h3>
@@ -159,9 +159,9 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-gradient-to-br from-indigo-50 to-indigo-100/50 hover:shadow-xl transition-all duration-300 group">
+          <Card className="p-6 rounded-2xl border-0 shadow-lg bg-white hover:shadow-xl transition-all duration-300 group">
             <CardContent className="p-0">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <BarChart3 className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Progreso</h3>
@@ -174,7 +174,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonios" className="bg-white/50 backdrop-blur-sm py-20">
+      <section id="testimonios" className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -277,7 +277,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <div className="bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl p-12 text-white">
+        <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white">
           <h2 className="text-4xl font-bold mb-4">
             ¿Listo para transformar tu forma de estudiar?
           </h2>
@@ -299,14 +299,14 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 border-t border-gray-200/50 py-12">
+      <footer className="bg-gray-50 border-t border-gray-200 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <Brain className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 KarAI
               </span>
             </div>
