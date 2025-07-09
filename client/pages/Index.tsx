@@ -11,7 +11,6 @@ import {
   FileText,
   CreditCard,
   BarChart3,
-  Play,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -42,9 +41,11 @@ const Index = () => {
             >
               Testimonios
             </a>
-            <Button variant="outline" className="rounded-xl">
-              Iniciar Sesión
-            </Button>
+            <Link to="/login">
+              <Button variant="outline" className="rounded-xl">
+                Iniciar Sesión
+              </Button>
+            </Link>
           </div>
         </nav>
       </header>
@@ -66,24 +67,16 @@ const Index = () => {
           flashcards, quizzes y resúmenes personalizados. Perfecta para
           estudiantes, profesores y autodidactas.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center">
           <Link to="/dashboard">
             <Button
               size="lg"
-              className="rounded-xl px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="rounded-xl px-12 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <Zap className="w-5 h-5 mr-2" />
               Comenzar Gratis
             </Button>
           </Link>
-          <Button
-            variant="outline"
-            size="lg"
-            className="rounded-xl px-8 py-4 text-lg font-semibold"
-          >
-            <Play className="w-5 h-5 mr-2" />
-            Ver Demo
-          </Button>
         </div>
 
         {/* Stats */}
