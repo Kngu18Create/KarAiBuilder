@@ -3,8 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, FileText, Search, Plus, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import AuthModal from "@/components/AuthModal";
 
 const Notes = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+  const handleAuthRequired = () => {
+    setShowAuthModal(true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-emerald-50">
       {/* Header */}
@@ -38,7 +46,7 @@ const Notes = () => {
                 Todas tus notas organizadas con etiquetas y categorías
               </p>
             </div>
-            <Button className="rounded-xl">
+            <Button className="rounded-xl" onClick={handleAuthRequired}>
               <Plus className="w-4 h-4 mr-2" />
               Nueva Nota
             </Button>
@@ -134,6 +142,9 @@ const Notes = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal de autenticación */}
+      <AuthModal open={showAuthModal} onOpenChange={setShowAuthModal} />
     </div>
   );
 };
