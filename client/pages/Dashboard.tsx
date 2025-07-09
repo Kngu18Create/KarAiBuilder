@@ -18,7 +18,6 @@ import {
   Clock,
   Target,
   TrendingUp,
-  BookOpen,
   Zap,
   Settings,
 } from "lucide-react";
