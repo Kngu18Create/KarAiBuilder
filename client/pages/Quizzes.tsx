@@ -3,8 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Zap, Clock, Award, ArrowLeft, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import AuthModal from "@/components/AuthModal";
 
 const Quizzes = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+  const handleAuthRequired = () => {
+    setShowAuthModal(true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-emerald-50">
       {/* Header */}
@@ -66,7 +74,10 @@ const Quizzes = () => {
                 <p className="text-gray-600 text-sm mb-4">
                   Preguntas de opción múltiple sobre reglas de derivación
                 </p>
-                <Button className="w-full rounded-xl">
+                <Button
+                  className="w-full rounded-xl"
+                  onClick={handleAuthRequired}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Comenzar Quiz
                 </Button>
@@ -133,7 +144,10 @@ const Quizzes = () => {
                 <p className="text-gray-600 text-sm mb-4">
                   Pregunta 8 de 12 • Progreso guardado
                 </p>
-                <Button className="w-full rounded-xl">
+                <Button
+                  className="w-full rounded-xl"
+                  onClick={handleAuthRequired}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Continuar Quiz
                 </Button>
@@ -267,6 +281,9 @@ const Quizzes = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal de autenticación */}
+      <AuthModal open={showAuthModal} onOpenChange={setShowAuthModal} />
     </div>
   );
 };
