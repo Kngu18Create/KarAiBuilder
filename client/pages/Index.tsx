@@ -109,7 +109,7 @@ const Index = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Todo lo que necesitas para
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {" "}
               estudiar mejor
             </span>
@@ -179,7 +179,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
               Lo que dicen nuestros
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 {" "}
                 estudiantes
               </span>
