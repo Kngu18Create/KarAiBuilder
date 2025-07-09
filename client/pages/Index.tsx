@@ -299,28 +299,39 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 border-t border-gray-200/50 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
                 <Brain className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">KarAI</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                KarAI
+              </span>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
                 Privacidad
               </a>
-              <a href="#" className="hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
                 Términos
               </a>
-              <a href="#" className="hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
                 Soporte
               </a>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+          <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-500">
             © 2024 KarAI. Todos los derechos reservados. Hecho con ❤️ para
             estudiantes.
           </div>
