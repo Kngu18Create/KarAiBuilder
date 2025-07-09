@@ -9,7 +9,7 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import {
-  Brain,
+  BookOpen,
   Upload,
   FileText,
   CreditCard,
@@ -65,7 +65,7 @@ const Dashboard = () => {
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <Brain className="w-5 h-5 text-white" />
+                <BookOpen className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 KarAI
